@@ -1,14 +1,10 @@
 # Open input file
-with open ("input.txt") as f:
+with open("input.txt") as f:
     lines = f.readlines()
 
     # Init variables
     prev = 0
     nth = 0
-    prev_line = int(lines[prev])
-    nth_line = int(lines[nth])
-
-    # Init more variables
     inc = 0
     dec = 0
     length = len(lines) - 1
@@ -19,6 +15,7 @@ with open ("input.txt") as f:
         nth = nth + 1
         prev_line = int(lines[prev])
         nth_line = int(lines[nth])
+
         if nth_line > prev_line:
             inc = inc + 1
         else:
