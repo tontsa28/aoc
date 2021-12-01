@@ -1,2 +1,2 @@
-# adventofcode
-My Advent of Code challenge answers
+# aoc
+My Advent of Code challenge answers.
