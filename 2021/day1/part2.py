@@ -13,7 +13,7 @@ with open("input.txt") as f:
     dec = 0
     length = len(lines) - 2
 
-    # Iterate through the list with a for loop
+    # Iterate through the list
     for i in range(length):
         prev1 = nth1
         prev2 = nth2

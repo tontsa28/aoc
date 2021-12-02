@@ -9,7 +9,7 @@ with open("input.txt") as f:
     dec = 0
     length = len(lines) - 1
     
-    # Iterate through the list with a for loop
+    # Iterate through the list
     for i in range(length):
         prev = nth
         nth = nth + 1
