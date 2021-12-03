@@ -8,13 +8,28 @@ with open("input.txt") as f:
     
     for i in range(length):
         nth_line = lines[nth]
-        char1 = nth_line[0]
+        bit = 0
+        char = ""
+        nthbit = nth_line[bit]
         gamma_count = 0
         epsilon_count = 0
-        if char1 == "1":
+        if nthbit == "1":
             gamma_count = gamma_count + 1
-        elif char1 == "0":
+            char += "1"
+        elif nthbit == "0":
             epsilon_count = epsilon_count + 1
-        print(gamma_count)
-        print(epsilon_count)
+            char += "0"
+        if gamma_count > epsilon_count:
+            gamma += char
+        else:
+            epsilon += char
+        char = ""
         nth = nth + 1
+        bit = bit + 1
+
+    print(gamma)
+    print(epsilon)
+    print(gamma_count)
+    print(epsilon_count)
+    print(bit)
+    print(nth)
