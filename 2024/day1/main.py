@@ -16,8 +16,8 @@ def main():
             left.append(int(splitted[0]))
             right.append(int(splitted[1].removesuffix('\n')))
 
-    print(solve_part1(left, right))
-    print(solve_part2(left, right))
+    print('Part 1:', solve_part1(left, right))
+    print('Part 2:', solve_part2(left, right))
 
 if __name__ == '__main__':
     main()
